@@ -10,7 +10,6 @@ class Producto(models.Model):
     nombre = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=50)
     tipo= models.CharField(max_length=50)
-    lote= models.CharField(max_length=50)
-    precio_uni = models.IntegerField()
+    precio_uni = models.IntegerField(default=0)
 
-    
+    REQUIRED_FIELDS = ('id_producto', 'nombre', 'descripcion', 'tipo', 'precio_uni')

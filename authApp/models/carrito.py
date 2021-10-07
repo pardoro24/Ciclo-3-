@@ -8,6 +8,6 @@ class Carrito(models.Model):
     en la base de datos correspondiente.
     """
     id = models.AutoField(primary_key=True)
-    id_producto= models.ForeignKey(Producto, related_name='carrito', on_delete=models.CASCADE)
+    id_producto= models.ForeignKey(Producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField(default=0)
     valor_total = models.IntegerField(default=0)  
