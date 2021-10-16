@@ -10,4 +10,4 @@ class Carrito(models.Model):
     id = models.AutoField(primary_key=True)
     id_producto= models.ForeignKey(Producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField(default=0)
-    valor_total = models.IntegerField(default=0)  
+    valor_total = models.IntegerField(default=0)
